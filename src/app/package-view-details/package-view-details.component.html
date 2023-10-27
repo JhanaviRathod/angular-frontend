@@ -1,0 +1,16 @@
+<div class="contaier mt-5 d-flex justify-content-center">
+    <div class="card " style="height: 85vh; width: 1000px;">
+        <div class="text-center text-uppercase font-weight-bold text-primary fs-1 mt-5">
+            {{pack.packageName}}
+        </div>
+        <div class="text-center text-uppercase font-weight-bold  fs-5 m-5">
+            {{pack.description}}
+        </div>
+        <div class="text-center text-uppercase font-weight-bold  fs-3">
+           ₹<s> {{pack.packageActualPrice}} </s> &nbsp; &nbsp; ₹{{pack.packageDiscountedPrice}}
+        </div>
+        <div class="text-center ">
+            <button type="button" class="btn btn-danger mt-4 fs-4" (click)="buyPackage(pack.packageId)">Buy Now</button>
+        </div>
+    </div>
+</div>
